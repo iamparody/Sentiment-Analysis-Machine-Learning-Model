@@ -131,5 +131,9 @@ The dataset includes reviews across multiple Amazon categories and contains both
 10. Insight generation and documentation
 
 ---
+Executive EDA Summary (One Paragraph)
 
+Exploratory analysis reveals a large, text-rich, but sentiment-imbalanced dataset dominated by positive reviews. Review length varies systematically with sentiment, with negative and neutral reviews providing more detailed feedback. The vocabulary size and text volume support classical NLP pipelines (TF-IDF + linear models) as a strong and interpretable baseline, while deep learning models can be explored as extensions.
+
+---
 
