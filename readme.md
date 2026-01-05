@@ -190,3 +190,16 @@ Neutral sentiment is the most challenging class. Many neutral reviews are confus
 
 
 A TF-IDF + class-weighted Logistic Regression baseline achieved ~82% accuracy with strong performance on positive and negative sentiment. Neutral sentiment remains the most difficult class due to semantic ambiguity. This baseline provides a strong, interpretable benchmark suitable for production comparison.
+
+
+
+How to Build and Run (Docker)
+Build image
+docker build -t amazon-sentiment-api .
+
+Run container
+docker run -p 5000:5000 amazon-sentiment-api
+
+
+Test:
+curl http://localhost:5000/health
