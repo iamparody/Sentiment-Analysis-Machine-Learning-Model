@@ -17,6 +17,7 @@ Sentiment Analysis is a Natural Language Processing (NLP) task that automaticall
 Customer feedback is subjective by nature and often contains informal language, ambiguity, and mixed opinions. Manually reviewing hundreds of thousands of reviews is not scalable. Sentiment analysis enables automated extraction of meaningful insights from large volumes of unstructured text data.
 
 ---
+![Uploading Screenshot 2026-01-06 000041.png…]()
 
 ### Business Understanding
 
