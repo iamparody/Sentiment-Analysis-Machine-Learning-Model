@@ -136,4 +136,57 @@ Executive EDA Summary (One Paragraph)
 Exploratory analysis reveals a large, text-rich, but sentiment-imbalanced dataset dominated by positive reviews. Review length varies systematically with sentiment, with negative and neutral reviews providing more detailed feedback. The vocabulary size and text volume support classical NLP pipelines (TF-IDF + linear models) as a strong and interpretable baseline, while deep learning models can be explored as extensions.
 
 ---
+| Rating | Sentiment | Rationale                   |
+| ------ | --------- | --------------------------- |
+| 1–2    | Negative  | Clear dissatisfaction       |
+| 3      | Neutral   | Ambiguous / mixed sentiment |
+| 4–5    | Positive  | Clear satisfaction          |
 
+---
+Text preprocessing was implemented using a modular pipeline including lowercasing, URL and punctuation removal, stopword filtering, and stemming. All transformations were applied post–label freeze to prevent leakage and ensure reproducibility during inference.
+<img width="1649" height="895" alt="Screenshot 2026-01-05 135442" src="https://github.com/user-attachments/assets/2df5a3ba-5a03-400c-9306-70d99de79701" />
+
+---
+### STEP 8 — Feature Extraction & Baseline Modeling
+
+
+Perform a stratified train/validation split
+
+Vectorize text using TF-IDF
+
+Train a class-weighted Logistic Regression
+
+Establish a baseline benchmark (accuracy + per-class metrics)
+
+## Class-wise Performance (Critical)
+### Positive
+Precision: 0.97
+
+Recall: 0.85
+
+F1: 0.91
+
+The model is extremely reliable when predicting positive sentiment, which is expected given class dominance and strong lexical signals.
+
+### Negative
+
+Precision: 0.69
+
+Recall: 0.76
+
+F1: 0.72
+
+Negative sentiment is captured reasonably well. Recall is higher than precision, meaning the model prefers to flag potential negatives rather than miss them—acceptable from a business-risk perspective.
+
+### Neutral (Hard Class)
+
+Precision: 0.29
+
+Recall: 0.60
+
+F1: 0.39
+
+Neutral sentiment is the most challenging class. Many neutral reviews are confused with positive or negative, reflecting the inherently ambiguous nature of 3-star reviews.
+
+
+A TF-IDF + class-weighted Logistic Regression baseline achieved ~82% accuracy with strong performance on positive and negative sentiment. Neutral sentiment remains the most difficult class due to semantic ambiguity. This baseline provides a strong, interpretable benchmark suitable for production comparison.
