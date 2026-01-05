@@ -1,0 +1,25 @@
+# Core data handling
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+wordcloud
+
+# Machine Learning
+scikit-learn
+
+# NLP
+nltk
+
+# Deep Learning (includes Keras)
+tensorflow
+
+# Utilities
+tqdm
+joblib
+
+# Notebooks & App
+notebook
+streamlit
