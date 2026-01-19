@@ -1,4 +1,5 @@
 # Amazon Product Review Sentiment Analysis
+<img width="2533" height="1280" alt="Screenshot 2026-01-19 091617" src="https://github.com/user-attachments/assets/db9ece2f-73ae-4567-8f4e-0fad401375b7" />
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-NLP-green)
