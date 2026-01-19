@@ -42,7 +42,7 @@ with open(f"{MODEL_DIR}/label_encoder.pkl", "rb") as f:
 
 # OR Option 2: Files in models/data/ subfolder
 MODEL_DIR = "models"
-with open(f"{MODEL_DIR}/data/tfidf_vectorizer.pkl", "rb") as f:
+with open(f"{MODEL_DIR}/tfidf_vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
 # -----------------------
 # PREDICTION FUNCTION
