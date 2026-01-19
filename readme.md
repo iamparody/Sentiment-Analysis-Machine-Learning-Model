@@ -8,7 +8,7 @@
 ![Deployment](https://img.shields.io/badge/Deployment-Streamlit%20Cloud-red)
 
 ---
-
+# ACCESS THE APP HERE : https://sentiment-analysis-machine-learning-model-r3axhcsupyyk4opeazm6.streamlit.app/
 ## 📌 1. Problem Definition
 
 ### What is Sentiment Analysis?
