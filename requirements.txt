@@ -1,7 +1,7 @@
 # Core data handling
 numpy
 pandas
-
+plotly>=5.0.0
 # Visualization
 matplotlib
 seaborn
